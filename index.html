@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maison Dorée | Where Every Meal Is Golden</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="index.html" class="logo">Maison <span>Dorée</span></a>
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="#booking" class="btn-book">Book A Table</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="home">
+  <div>
+    <span class="hero-badge">✦ MAISON DORÉE • ABUJA</span>
+    <h1>Where Every<br><em>Meal Is Golden</em></h1>
+    <p>Experience luxury dining in the heart of Abuja. Fresh ingredients, master chefs, and an atmosphere designed for unforgettable moments.</p>
+    <div class="hero-btns">
+      <a href="#menu" class="btn-primary">View Menu →</a>
+      <a href="#booking" class="btn-gold">Book A Table</a>
+    </div>
+    <div class="hero-stats">
+      <div><b>10+</b><span>Years Experience</span></div>
+      <div><b>50+</b><span>Signature Dishes</span></div>
+      <div><b>20k+</b><span>Happy Guests</span></div>
+    </div>
+  </div>
+  <div class="hero-img">
+    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80" alt="Luxury Dining">
+  </div>
+</header>
+
+<!-- ABOUT PREVIEW -->
+<section class="about" id="about">
+  <div class="about-img">
+    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800&q=80" alt="Restaurant Interior">
+  </div>
+  <div class="about-text">
+    <span class="gold-label">OUR STORY</span>
+    <h2>Where Taste Meets Elegance</h2>
+    <p>At Maison Dorée, we believe dining is more than eating — it is an experience. Born from a passion for authentic flavours and refined hospitality, our kitchen blends traditional recipes with modern culinary artistry.</p>
+    <p>Every dish is prepared with fresh, locally sourced ingredients, cooked with care, and served in an atmosphere designed for comfort, class, and unforgettable moments.</p>
+    <div class="about-stats">
+      <div><b>10+</b><span>Years</span></div>
+      <div><b>50+</b><span>Dishes</span></div>
+      <div><b>20k+</b><span>Guests</span></div>
+    </div>
+    <a href="about.html" class="btn-primary">Discover Our Story</a>
+  </div>
+</section>
+
+<!-- MISSION & VISION -->
+<section>
+  <div class="mv">
+    <div class="mv-card">
+      <span style="font-size:28px">✦</span>
+      <h3>Our Mission</h3>
+      <p>To serve exceptional food at Maison Dorée, crafted with fresh ingredients and genuine hospitality, creating golden dining experiences for every guest.</p>
+    </div>
+    <div class="mv-card dark">
+      <span style="font-size:28px;color:#C9A227">✦</span>
+      <h3>Our Vision</h3>
+      <p>To make Maison Dorée the most trusted and celebrated dining destination in Abuja — known for elegance, taste, and world-class service.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section id="menu">
+  <div class="section-head">
+    <span class="gold-label">OUR MENU</span>
+    <h2>Signature Dishes</h2>
+    <p>Taste the gold. Choose your favourite and order in seconds.</p>
+  </div>
+  <div class="filter-btns">
+    <button class="active" onclick="filterMenu('all',this)">All</button>
+    <button onclick="filterMenu('grills',this)">Grills</button>
+    <button onclick="filterMenu('main',this)">Main Course</button>
+    <button onclick="filterMenu('dessert',this)">Desserts</button>
+  </div>
+  <div class="menu-grid" id="menuGrid"></div>
+</section>
+
+<!-- BOOKING + CONTACT -->
+<section id="contact">
+  <div class="booking" id="booking">
+    <div>
+      <span class="gold-label">RESERVATION</span>
+      <h2>Book A Table</h2>
+      <p>Reserve your golden experience. We will confirm via WhatsApp within 10 minutes.</p>
+      <form onsubmit="bookTable(event)">
+        <input type="text" id="custName" placeholder="Your Name" required>
+        <input type="tel" id="custPhone" placeholder="Phone Number" required>
+        <select id="guests"><option>2 Guests</option><option>4 Guests</option><option>6 Guests</option><option>Family (8+)</option></select>
+        <input type="date" id="bookDate" required>
+        <button class="btn-primary" style="width:100%">Confirm Reservation →</button>
+      </form>
+      <p id="bookMsg" style="color:#C9A227;font-weight:600"></p>
+    </div>
+    <div class="contact-info">
+      <h3 style="color:white;margin-bottom:18px">Visit Maison Dorée</h3>
+      <div><b>LOCATION</b>Plot 12, Wuse 2, Abuja</div>
+      <div><b>OPENING HOURS</b>Mon - Sun: 10am - 11pm</div>
+      <div><b>PHONE / WHATSAPP</b>+234 701 253 6141</div>
+      <div><b>EMAIL</b>hello@maisondoree.ng</div>
+      <div><b>INSTAGRAM</b>@maisondoree.abuja</div>
+      <a href="https://wa.me/2347012536141" target="_blank" class="btn-gold" style="display:inline-block;margin-top:10px">Chat on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 <b>Maison Dorée</b> — Where Every Meal Is Golden. Crafted with love in Abuja.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

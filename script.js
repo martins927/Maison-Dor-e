@@ -5,8 +5,8 @@ function toggleMenu(){
 
 // Menu Data
 const dishes = [
-  {name:"Jollof Royale", price:"₦8,500", cat:"main", img:"https://images.unsplash.com/photo-1512058564366-18510be2db19?w=600&q=80", desc:"Smoky party jollof with grilled chicken & plantain"},
-  {name:"Grilled Tilapia", price:"₦12,000", cat:"grills", img:"https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?w=600&q=80", desc:"Charcoal grilled tilapia, pepper sauce & sides"},
+  {name:"Jollof Royale", price:"₦8,500", cat:"main", img:"img 3.jpeg", desc:"Smoky party jollof with grilled chicken & plantain"},
+  {name:"Grilled Tilapia", price:"₦12,000", cat:"grills", img:"img1.jpeg", desc:"Charcoal grilled tilapia, pepper sauce & sides"},
   {name:"Mixed Grill Platter", price:"₦18,500", cat:"grills", img:"https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80", desc:"Beef, chicken & turkey suya platter for 2"},
   {name:"Pasta Alfredo", price:"₦9,500", cat:"main", img:"https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=600&q=80", desc:"Creamy alfredo pasta with grilled prawns"},
   {name:"Chocolate Fondant", price:"₦6,000", cat:"dessert", img:"https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&q=80", desc:"Warm chocolate cake with vanilla ice cream"},

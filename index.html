@@ -16,8 +16,8 @@
   <ul class="nav-links" id="navLinks">
     <li><a href="index.html" class="active">Home</a></li>
     <li><a href="#menu">Menu</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#Contact-info">Contact</a></li>
+    <li><a href="#story">About</a></li>
+    <li><a href="#contact">Contact</a></li>
     <li><a href="#booking" class="btn-book">Book A Table</a></li>
   </ul>
 </nav>
@@ -44,12 +44,12 @@
 </header>
 
 <!-- ABOUT PREVIEW -->
-<section class="about">
+<section class="about" id="about">
   <div class="about-img">
     <img src="img2.jpeg" alt="Restaurant Interior">
   </div>
-  <div class="about-text" id="about">
-    <span class="gold-label">OUR STORY</span>
+  <div class="about-text">
+    <span class="gold-label" id="story">OUR STORY</span>
     <h2>Where Taste Meets Elegance</h2>
     <p>At Maison Dorée, we believe dining is more than eating — it is an experience. Born from a passion for authentic flavours and refined hospitality, our kitchen blends traditional recipes with modern culinary artistry.</p>
     <p>Every dish is prepared with fresh, locally sourced ingredients, cooked with care, and served in an atmosphere designed for comfort, class, and unforgettable moments.</p>
@@ -58,7 +58,7 @@
       <div><b>50+</b><span>Dishes</span></div>
       <div><b>20k+</b><span>Guests</span></div>
     </div>
-    <a href="about.html" class="btn-primary">Discover Our Story</a>
+    <a href="#story" class="btn-primary">Discover Our Story</a>
   </div>
 </section>
 
@@ -91,7 +91,7 @@
     <button onclick="filterMenu('main',this)">Main Course</button>
     <button onclick="filterMenu('dessert',this)">Desserts</button>
   </div>
-  <div class="menu-grid" id="menuGrid "></div>
+  <div class="menu-grid" id="menuGrid"></div>
 </section>
 
 <!-- BOOKING + CONTACT -->
@@ -106,24 +106,24 @@
         <input type="tel" id="custPhone" placeholder="Phone Number" required>
         <select id="guests"><option>2 Guests</option><option>4 Guests</option><option>6 Guests</option><option>Family (8+)</option></select>
         <input type="date" id="bookDate" required>
-        <button class="btn-primary" style="width:100%" id="Contact-info">Confirm Reservation →</button>
+        <button class="btn-primary" style="width:100%">Confirm Reservation →</button>
       </form>
       <p id="bookMsg" style="color:#C9A227;font-weight:600"></p>
     </div>
     <div class="contact-info">
       <h3 style="color:white;margin-bottom:18px">Visit Maison Dorée</h3>
-      <div><b>LOCATION</b>Plot 12, Kwali 1, Abuja</div>
+      <div><b>LOCATION</b>Plot 12, Iddo, Abuja</div>
       <div><b>OPENING HOURS</b>Mon - Sun: 8am - 11pm</div>
       <div><b>PHONE / WHATSAPP</b>+234 701 253 6141</div>
       <div><b>EMAIL</b>hello@maisondoree.ng</div>
-      <div><b>INSTAGRAM</b>@maisondoree.kwali</div>
+      <div><b>INSTAGRAM</b>@maisondoree.abuja</div>
       <a href="https://wa.me/2347012536141" target="_blank" class="btn-gold" style="display:inline-block;margin-top:10px">Chat on WhatsApp</a>
     </div>
   </div>
 </section>
 
 <footer>
-  © 2026 Designed and Developed by <b><a href="https://www.linkedin.com/safety/go/?url=https%3A%2F%2Fmartins-resume-web.vercel.app%2F&urlhash=Xa1Z&mt=MEqKUtvRofA05zzzpUyc6yu8Kqa5UxkqzelED5kQFLO8TDRmqHdipDPX-yYy_k8ckLBxrT2O9NnZO4pQqZMpwgvaWZBdtRm5WpOencj1VsxWe174zm5UPA2UPvPQTF1YRVBzhkhEZBC1uL_ul6LmTTAaCVj3RXCrkjB6nuDwhoupRUlHDBYIUuUrqwwo9A&isSdui=true&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BfUBJDdqBQBmMhgXg6tJ%2FJw%3D%3D">Martinconnect.</a></b> All right Reserved.
+  © 2026 <b>Maison Dorée</b> — Where Every Meal Is Golden. Crafted with love in Abuja.
 </footer>
 
 <script src="script.js"></script>
